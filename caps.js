@@ -1,6 +1,6 @@
 'use strict';
 require('dotenv').config();
-const io = require('socket.io')(3000);
+const io = require('socket.io')(process.env.PORT);
 
 function eventHandler(eventName, room=null){
   // The universal even handler
